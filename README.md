@@ -6,20 +6,19 @@
 
 # Passos
 
-<p>Criação do ambiente através de linha de comando:</p>
- curl -s "https://laravel.build/olw-3?with=mysql,redis,mailpit" | bash
+<h3>Criação do ambiente através de linha de comando:</h3>
+<p>curl -s "https://laravel.build/olw-3?with=mysql,redis,mailpit" | bash</p> 
 
-<p>Criação do alias para comandos:</p>
-- Edição do arquivo (utilizando nano).
- alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail
+<h3>Criação do alias para comandos:</h3>
+- Edição do arquivo (utilizando nano): alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail
 
-<p>Iniciando os containers:</p>
+<h3>Iniciando os containers:</h3>
  sail up -d
 
-<p>Instalando os recursos de autenticação:</p>
+<h3>Instalando os recursos de autenticação:</h3>
  sail composer require laravel/breeze --dev
  sail artisan breeze:install 
  sail artisan migrate
 
-<p>Testando registro via breeze.</p>
+<h3>Testando registro via breeze.</h3>
 
