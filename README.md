@@ -10,7 +10,7 @@
 <p>curl -s "https://laravel.build/olw-3?with=mysql,redis,mailpit" | bash</p> 
 
 <h3>Criação do alias para comandos:</h3>
-- Edição do arquivo (utilizando nano): alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail
+- Edição do arquivo (utilizando nano): alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 <h3>Iniciando os containers:</h3>
  sail up -d
