@@ -24,7 +24,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/checkout', function () {
     return view('checkout.index');
-})->middleware(['guest'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('checkout');
 
 
 Route::middleware('auth')->group(function () {
